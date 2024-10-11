@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de Cor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Clique aqui para mudar a cor!</button>
+
+    <script>
+        function changeColor() {
+            const colors = ['#FF5733', '#33FF57', '#3357FF', '#F33FF5', '#FFC300'];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</body>
+</html>
